@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring Framework</title>
+</head>
+<body>
+<h1>Book List</h1>
+
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Title</th>
+		<th>Publisher</th>
+	</tr>
+	<tr th:each="book : ${books}">
+		<td th:text="${book.id}">123</td>
+		<td th:text="${book.Title}">Spring in Action</td>
+		<td th:text="${book.publisher.name}">Wrox</td>
+</table>
+
+</body>
+</html>
